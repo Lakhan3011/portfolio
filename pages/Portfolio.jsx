@@ -42,6 +42,9 @@ export default function Portfolio() {
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <Image
                 src={src}
+                width={500}
+                height={500}
+                quality={80}
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
