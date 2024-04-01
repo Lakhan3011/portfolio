@@ -6,3 +6,7 @@
   font-family: "burtons";
   src: url(../public/Burtons.otf);
 }
+
+.scroll-behavior-smooth {
+  scroll-behavior: smooth;
+}

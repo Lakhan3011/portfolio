@@ -5,14 +5,12 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
-import { useState } from "react";
+import Link from "next/link";
 import lakhan from "../public/lakhan.png";
 
-function Homepage() {
-  const [darkMode, setDarkMode] = useState(false);
+function Homepage({ darkMode, setDarkMode }) {
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
@@ -48,10 +46,23 @@ function Homepage() {
               down below and let's get cracking!
             </p>
 
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillGithub />
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
+              <Link
+                href={"https://twitter.com/rajput_lakhan11"}
+                target="_blank"
+              >
+                <AiFillTwitterCircle />
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/in/lakhan-rajput-7853a521a/"}
+                target="_blank"
+              >
+                <AiFillLinkedin />
+              </Link>
+
+              <Link href={"https://github.com/Lakhan3011"} target="_blank">
+                <AiFillGithub />
+              </Link>
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <Image src={lakhan} layout="fill" objectFit={"cover"} />
