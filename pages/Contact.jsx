@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-white p-4  dark:bg-gray-900 dark:text-white"
+      className="w-full min-h-screen bg-white p-4  dark:bg-gray-900 dark:text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">

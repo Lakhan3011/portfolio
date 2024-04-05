@@ -34,7 +34,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-white w-full md:h-screen dark:bg-gray-900 dark:text-white">
+    <div className="bg-white w-full min-h-screen md:h-screen dark:bg-gray-900 dark:text-white">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl  font-bold inline border-b-4 border-gray-500 ">
@@ -48,11 +48,10 @@ export default function Portfolio() {
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <Image
                 src={src}
-                width={500}
-                height={500}
                 quality={80}
-                className="rounded-md duration-200 hover:scale-105"
+                className="object-cover h-48 w-96 rounded-md duration-200 hover:scale-105 "
               />
+
               <div className="flex items-center justify-center">
                 <Link
                   href={demo}

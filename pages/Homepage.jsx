@@ -25,7 +25,7 @@ function Homepage({ darkMode, setDarkMode }) {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold px-4 py-3 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1oZWo3IOCyeg9cNoItEi1L9VgbuWayk30/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1pYtP84D0inTrJ2Z2lioAWUwTied_2L2j/view?usp=drivesdk"
                   target="_blank"
                 >
                   Resume
@@ -64,7 +64,7 @@ function Homepage({ darkMode, setDarkMode }) {
                 <AiFillGithub />
               </Link>
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <div className=" relative mx-auto flex justify-center items-center bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-2 dark:border-none">
               <Image src={lakhan} layout="fill" objectFit={"cover"} />
             </div>
           </div>
