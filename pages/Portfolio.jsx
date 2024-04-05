@@ -1,9 +1,9 @@
-import arrayDestruct from "../public/arrayDestruct.jpg";
 import tennis from "../public/tennis.png";
 import password from "../public/password.jpg";
 import dev from "../public/dev.png";
 import Image from "next/image";
 import Link from "next/link";
+import bookStore from "../public/bookStore.jpg";
 
 export default function Portfolio() {
   const portfolios = [
@@ -21,6 +21,12 @@ export default function Portfolio() {
     },
     {
       id: 3,
+      src: bookStore,
+      demo: "https://book-store-frontend-lakhan3011s-projects.vercel.app/",
+      code: "https://github.com/Lakhan3011/Book_Store",
+    },
+    {
+      id: 4,
       src: dev,
       demo: "https://lakhan-porofolio.netlify.app/#Portfolio",
       code: "https://github.com/Lakhan3011/My_Portfolio",
